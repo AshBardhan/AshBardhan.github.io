@@ -1,0 +1,26 @@
+{
+  "name": "ashbardhan.github.io",
+  "version": "1.0.0",
+  "description": "Simple github IO page",
+  "main": "index.js",
+  "scripts": {
+    "start": "python -m SimpleHTTPServer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AshBardhan/AshBardhan.github.io.git"
+  },
+  "author": "AshBardhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AshBardhan/AshBardhan.github.io/issues"
+  },
+  "homepage": "https://github.com/AshBardhan/AshBardhan.github.io#readme",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
