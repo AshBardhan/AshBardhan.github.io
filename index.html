@@ -1,1 +1,89 @@
-Hello World
+<html>
+<head>
+	<style>
+		.stick {
+			width: 50px;
+			height: 100px;
+			border-radius: 10px;
+			background: yellow;
+			position: relative;
+			margin: 50px auto 80px;
+			//transition: all 2s;
+		}
+		/*.stick:hover {
+			transform: scale(3);
+			margin: 150px 60px 0;
+		}*/
+		.stick__head {
+			width: 50px;
+			height: 50px;
+			background: inherit;
+			border-radius: 50%;
+			position: absolute;
+			top: -50px;
+			animation: headbang 0.3s linear 0s infinite;
+			left: calc(50% - 25px);
+		}
+
+		@keyframes headbang {
+			from { top: -50px; }
+			50% { top: -30px; }
+			to { top: -50px; }
+		}
+		.stick__leg {
+			border-radius: inherit;
+			background: inherit;
+			width: 20px;
+			height: 100px;
+			position: absolute;
+			transition: all 2s;
+			bottom: -80px;
+		}
+		.stick__leg.left {
+			left: 0;
+			transform: rotate(5deg);
+		}
+		.stick__leg.right {
+			right: 0;
+			transform: rotate(-5deg);
+		}
+		.stick__leg.right:hover {
+			transform: rotate(-90deg);	
+			bottom: -40px;
+			right: -40px;
+		}
+		.stick__arm {
+			border-radius: inherit;
+			background: inherit;
+			width: 20px;
+			height: 80px;
+			position: absolute;
+			transition: all 2s;
+			top: 0px;
+		}
+		.stick__arm.left {
+			left: -20px;
+			transform: rotate(20deg);
+		}
+		.stick__arm.left:hover {
+			transform: rotate(90deg);	
+			top: -30px;
+			left: -30px;
+		}
+ 		.stick__arm.right {
+			right: -20px;
+			transform: rotate(-20deg);
+		}
+	</style>
+</head>
+<body>
+	<h1>..Testing Here..</h1>
+	<div class="stick">
+		<div class="stick__head"></div>
+		<div class="stick__arm  left"></div>
+		<div class="stick__arm  right"></div>
+		<div class="stick__leg  left"></div>
+		<div class="stick__leg  right"></div>
+	</div>
+</body>
+</html>
