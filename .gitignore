@@ -1,0 +1,14 @@
+# Created by .gitignore support plugin (hsz.mobi)
+
+### OSX ###
+.DS_Store
+
+### PhPStorm / IntellJ IDEA ###
+.idea/
+*.iml
+
+### Dependencies ###
+node_modules/
+bower_components/
+npm-debug.log
+.grunt
