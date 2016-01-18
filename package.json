@@ -4,6 +4,7 @@
 	"description": "Simple github IO page",
 	"main": "index.js",
 	"scripts": {
+		"postinstall": "bower cache clean && bower install",
 		"start": "python -m SimpleHTTPServer"
 	},
 	"repository": {
