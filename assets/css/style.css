@@ -9,9 +9,15 @@ body {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	color: #f1f1f1;
-	background: url("../images/ashish.bardhan-background.jpg") no-repeat center;
+	color: #ababab;
+	background-image: url("../images/bg-ashbardhan-10.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
 	background-size: cover;
+	animation-name: bg-image-shuffle;
+	animation-duration: 50s;
+	animation-iteration-count: infinite;
 }
 
 h1, h2 {
@@ -55,6 +61,19 @@ footer a {
 
 .icon:hover {
 	fill: rgba(255, 255, 255, 1);
+}
+
+@keyframes bg-image-shuffle {
+	10% { background-image: url("../images/bg-ashbardhan-1.jpg"); color: #ababab; }
+	20% { background-image: url("../images/bg-ashbardhan-2.jpg"); color: #f1f1f1; }
+	30% { background-image: url("../images/bg-ashbardhan-3.jpg"); color: #f1f1f1; }
+	40% { background-image: url("../images/bg-ashbardhan-4.jpg"); color: #ababab; }
+	50% { background-image: url("../images/bg-ashbardhan-5.jpg"); color: #f1f1f1; }
+	60% { background-image: url("../images/bg-ashbardhan-6.jpg"); color: #f1f1f1; }
+	70% { background-image: url("../images/bg-ashbardhan-7.jpg"); color: #ababab; }
+	80% { background-image: url("../images/bg-ashbardhan-8.jpg"); color: #ababab; }
+	90% { background-image: url("../images/bg-ashbardhan-9.jpg"); color: #f1f1f1; }
+	100% { background-image: url("../images/bg-ashbardhan-10.jpg"); color: #ababab; }
 }
 
 @media (max-width: 768px) {
