@@ -1,9 +1,9 @@
 {
 	"name": "ashbardhan.github.io",
-	"version": "1.0.0",
+	"version": "0.0.1",
 	"description": "Simple github IO page",
 	"scripts": {
-		"postinstall": "bower cache clean && bower install",
+		"postinstall": "bower cache clean && bower install && grunt build",
 		"start": "python -m SimpleHTTPServer"
 	},
 	"repository": {
