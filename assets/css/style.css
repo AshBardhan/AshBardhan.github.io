@@ -1,0 +1,69 @@
+html {
+	font-size: 16px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+	font-size: 1rem;
+	min-width: 320px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	color: #f1f1f1;
+	background: url("../images/ashish.bardhan-background.jpg") no-repeat center;
+	background-size: cover;
+}
+
+h1, h2 {
+	text-align: center;
+	margin: 0.25em 0;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+header {
+	margin: 2rem auto 0;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	margin: 2rem auto;
+	text-align: center;
+	width: 100%;
+}
+
+footer a {
+	margin: 1rem;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.icon {
+	width: 2rem;
+	height: 2rem;
+	display: inline-block;
+	fill: rgba(255, 255, 255, 0.75);
+}
+
+.icon:hover {
+	fill: rgba(255, 255, 255, 1);
+}
+
+@media (max-width: 768px) {
+	html {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 992px) {
+	html {
+		font-size: 14px;
+	}
+}
