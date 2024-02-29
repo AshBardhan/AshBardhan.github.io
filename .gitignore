@@ -1,14 +1,26 @@
 # Created by .gitignore support plugin (hsz.mobi)
 
-### OSX ###
-.DS_Store
-
-### PhPStorm / IntellJ IDEA ###
+# IDE specific templates
 .idea/
 *.iml
+.vs/
 
-### Dependencies ###
-node_modules/
-bower_components/
-npm-debug.log
-.grunt
+## macOS template
+*.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Thumbnails
+._*
+
+# SublimeText project files
+*.sublime-*
+
+## vim related
+*.swp
+*.swo
+
+## File dependencies
+node_modules
+*.log
