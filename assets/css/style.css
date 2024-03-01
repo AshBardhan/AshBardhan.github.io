@@ -32,8 +32,17 @@ h3 {
 
 p {
 	line-height: 1.4;
+	margin: 0 0 1.25em 0;
+	letter-spacing: 0.6px;
 }
 
+p:last-child {
+	margin: 0;
+}
+
+p a {
+	color: inherit;
+}
 
 header {
 	position: fixed;
@@ -80,23 +89,6 @@ header {
 	border-radius: 50%;
 }
 
-section {
-	min-height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-#about {
-	color: #e0ffff;
-	background: black;
-}
-
-#projects {
-	color: #42455a;
-	background: #e0ffff;
-}
-
 .social-links {
 	display: flex;
 	gap: 1.25em;
@@ -119,10 +111,35 @@ section {
 	height: 24px;
 }
 
+section {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .container {
 	max-width: 1280px;
 	margin: 0 auto;
 	padding: 0 20px;
+}
+
+.reveal {
+	position: relative;
+	transform: translateY(150px);
+	opacity: 0;
+	transition: 1s all ease;
+}
+
+.reveal.active {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.flexbox {
+	display: flex;
+	align-items: center;
+	gap: 2em;
 }
 
 #hero {
@@ -137,23 +154,21 @@ section {
 	flex-grow: 1;
 }
 
-.flexbox {
-	display: flex;
-	align-items: center;
-	gap: 2em;
+#about {
+	color: #e0ffff;
+	background: black;
 }
 
-.reveal {
-	position: relative;
-	transform: translateY(150px);
-	opacity: 0;
-	transition: 1s all ease;
+#about h2 {
+	text-align: center;
+	margin-bottom: 3em;
 }
 
-.reveal.active {
-	transform: translateY(0);
-	opacity: 1;
+#projects {
+	color: #42455a;
+	background: #e0ffff;
 }
+
 
 /* 
   html {
