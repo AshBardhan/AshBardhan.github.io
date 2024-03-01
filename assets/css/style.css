@@ -157,6 +157,10 @@ section {
 	background-color: #A5ABDF;
 }
 
+#hero .flexbox {
+	gap: 3em;
+}
+
 #hero h2 {
 	font-size: 1.5rem;
 	font-weight: 400;
