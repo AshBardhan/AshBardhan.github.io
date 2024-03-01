@@ -1,13 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Asap", sans-serif;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-body{
-  background: #A5ABDF;
+
+html {
+	font-size: 16px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+body {
+	font-size: 1rem;
+	background: #A5ABDF;
+}
+
+h1 {
+	font-size: 3rem;
+	margin: 0 0 0.125em 0;
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-weight: 400;
+	margin: 0 0 1em 0;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin: 0 0 20px 0;
+}
+
+p {
+	line-height: 1.4;
+}
+
 
 header {
 	position: fixed;
@@ -54,21 +80,22 @@ header {
 	border-radius: 50%;
 }
 
-section{
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+section {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
 #about {
-  color: #e0ffff;
-  background: black;
-  }
+	color: #e0ffff;
+	background: black;
+}
 
 #projects {
-  color: #42455a;
-  background: #e0ffff;
-} 
+	color: #42455a;
+	background: #e0ffff;
+}
 
 .social-links {
 	display: flex;
@@ -98,113 +125,115 @@ section{
 	padding: 0 20px;
 }
 
-h1{
-  font-size: 3rem;
-  margin: 0 0 0.125em 0;
+#hero {
+	background-color: #A5ABDF;
 }
 
-h2 {
-	font-size: 1.5rem;
-	font-weight: 400;
-	margin: 0 0 1em 0;
+.hero-image {
+	flex-shrink: 0;
 }
 
-h3 {
-	font-size: 1.25rem;
-	margin: 0 0 20px 0;
+.hero-title {
+	flex-grow: 1;
 }
 
-.reveal{
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 1s all ease;
+.flexbox {
+	display: flex;
+	align-items: center;
+	gap: 2em;
 }
 
-.reveal.active{
-  transform: translateY(0);
-  opacity: 1;
+.reveal {
+	position: relative;
+	transform: translateY(150px);
+	opacity: 0;
+	transition: 1s all ease;
+}
+
+.reveal.active {
+	transform: translateY(0);
+	opacity: 1;
 }
 
 /* 
-html {
-	font-size: 16px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-body {
-	font-size: 1rem;
-	min-width: 320px;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	color: #ababab;
-	background-image: url("../images/bg-ashbardhan-10.jpg");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-attachment: fixed;
-	background-size: cover;
-	animation-name: bg-image-shuffle;
-	animation-duration: 50s;
-	animation-iteration-count: infinite;
-}
-
-h1, h2 {
-	text-align: center;
-	margin: 0.25em 0;
-}
-
-h1 {
-	font-size: 2.5rem;
-}
-
-h2 {
-	font-size: 1.5rem;
-}
-
-header {
-	margin: 2rem auto 0;
-	letter-spacing: 0.3em;
-}
-
-footer {
-	position: absolute;
-	bottom: 0;
-	margin: 2rem auto;
-	text-align: center;
-	width: 100%;
-}
-
-footer a {
-	margin: 1rem;
-	text-decoration: none;
-	display: inline-block;
-}
-
-.icon {
-	width: 2rem;
-	height: 2rem;
-	display: inline-block;
-	fill: rgba(255, 255, 255, 0.75);
-}
-
-.icon:hover {
-	fill: rgba(255, 255, 255, 1);
-}
-
-@keyframes bg-image-shuffle {
-	10% { background-image: url("../images/bg-ashbardhan-1.jpg"); color: #ababab; }
-	20% { background-image: url("../images/bg-ashbardhan-2.jpg"); color: #f1f1f1; }
-	30% { background-image: url("../images/bg-ashbardhan-3.jpg"); color: #f1f1f1; }
-	40% { background-image: url("../images/bg-ashbardhan-4.jpg"); color: #ababab; }
-	50% { background-image: url("../images/bg-ashbardhan-5.jpg"); color: #f1f1f1; }
-	60% { background-image: url("../images/bg-ashbardhan-6.jpg"); color: #f1f1f1; }
-	70% { background-image: url("../images/bg-ashbardhan-7.jpg"); color: #ababab; }
-	80% { background-image: url("../images/bg-ashbardhan-8.jpg"); color: #ababab; }
-	90% { background-image: url("../images/bg-ashbardhan-9.jpg"); color: #f1f1f1; }
-	100% { background-image: url("../images/bg-ashbardhan-10.jpg"); color: #ababab; }
-}
-*/
+  html {
+	  font-size: 16px;
+	  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  body {
+	  font-size: 1rem;
+	  min-width: 320px;
+	  width: 100%;
+	  margin: 0;
+	  padding: 0;
+	  color: #ababab;
+	  background-image: url("../images/bg-ashbardhan-10.jpg");
+	  background-repeat: no-repeat;
+	  background-position: center center;
+	  background-attachment: fixed;
+	  background-size: cover;
+	  animation-name: bg-image-shuffle;
+	  animation-duration: 50s;
+	  animation-iteration-count: infinite;
+  }
+  
+  h1, h2 {
+	  text-align: center;
+	  margin: 0.25em 0;
+  }
+  
+  h1 {
+	  font-size: 2.5rem;
+  }
+  
+  h2 {
+	  font-size: 1.5rem;
+  }
+  
+  header {
+	  margin: 2rem auto 0;
+	  letter-spacing: 0.3em;
+  }
+  
+  footer {
+	  position: absolute;
+	  bottom: 0;
+	  margin: 2rem auto;
+	  text-align: center;
+	  width: 100%;
+  }
+  
+  footer a {
+	  margin: 1rem;
+	  text-decoration: none;
+	  display: inline-block;
+  }
+  
+  .icon {
+	  width: 2rem;
+	  height: 2rem;
+	  display: inline-block;
+	  fill: rgba(255, 255, 255, 0.75);
+  }
+  
+  .icon:hover {
+	  fill: rgba(255, 255, 255, 1);
+  }
+  
+  @keyframes bg-image-shuffle {
+	  10% { background-image: url("../images/bg-ashbardhan-1.jpg"); color: #ababab; }
+	  20% { background-image: url("../images/bg-ashbardhan-2.jpg"); color: #f1f1f1; }
+	  30% { background-image: url("../images/bg-ashbardhan-3.jpg"); color: #f1f1f1; }
+	  40% { background-image: url("../images/bg-ashbardhan-4.jpg"); color: #ababab; }
+	  50% { background-image: url("../images/bg-ashbardhan-5.jpg"); color: #f1f1f1; }
+	  60% { background-image: url("../images/bg-ashbardhan-6.jpg"); color: #f1f1f1; }
+	  70% { background-image: url("../images/bg-ashbardhan-7.jpg"); color: #ababab; }
+	  80% { background-image: url("../images/bg-ashbardhan-8.jpg"); color: #ababab; }
+	  90% { background-image: url("../images/bg-ashbardhan-9.jpg"); color: #f1f1f1; }
+	  100% { background-image: url("../images/bg-ashbardhan-10.jpg"); color: #ababab; }
+  }
+  */
 
 @media (max-width: 768px) {
 	html {
