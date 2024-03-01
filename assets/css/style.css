@@ -20,8 +20,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1.5rem;
-	font-weight: 400;
+	font-size: 2rem;
 	margin: 0 0 1em 0;
 }
 
@@ -42,6 +41,10 @@ p:last-child {
 
 p a {
 	color: inherit;
+}
+
+img {
+	max-width: 100%;
 }
 
 header {
@@ -94,7 +97,7 @@ header {
 	gap: 1.25em;
 }
 
-.social-links a {
+.social-link {
 	text-decoration: none;
 	display: inline-flex;
 	color: white;
@@ -102,13 +105,17 @@ header {
 	transition: opacity 0.3s;
 }
 
-.social-links a:hover {
+.social-link:hover {
 	opacity: 1;
 }
 
-.social-links svg {
+.social-link svg {
 	width: 24px;
 	height: 24px;
+}
+
+.social-link--dark {
+	color: #4a4a4a;
 }
 
 section {
@@ -121,7 +128,7 @@ section {
 .container {
 	max-width: 1280px;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 4em 2em;
 }
 
 .reveal {
@@ -142,8 +149,17 @@ section {
 	gap: 2em;
 }
 
+.flex-equal-child {
+	flex: 1 1 0;
+}
+
 #hero {
 	background-color: #A5ABDF;
+}
+
+#hero h2 {
+	font-size: 1.5em;
+	font-weight: 400;
 }
 
 .hero-image {
@@ -156,7 +172,7 @@ section {
 
 #about {
 	color: #e0ffff;
-	background: black;
+	background: #181616;
 }
 
 #about h2 {
@@ -165,10 +181,18 @@ section {
 }
 
 #projects {
-	color: #42455a;
+	color: #3d3e44;
 	background: #e0ffff;
 }
 
+#projects h2 {
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+#projects img {
+	margin-bottom: 1.5em;
+}
 
 /* 
   html {
