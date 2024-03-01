@@ -13,14 +13,45 @@ header {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background: red;
+	background: #282d36;
 	z-index: 1;
-	height: 40px;
+	height: 2.5em;
+}
+
+.header-container {
+	max-width: 1280px;
+	height: 100%;
+	margin: 0 auto;
 	display: flex;
-	gap: 30px;
 	padding: 0 20px;
 	align-items: center;
-	justify-content: flex-end;
+	justify-content: space-between;
+}
+
+.header-links {
+	display: flex;
+	gap: 1.5em;
+}
+
+.header-links a {
+	text-decoration: none;
+	font-size: 1.25rem;
+	color: #e6e663;
+}
+
+.header-links a:hover {
+	color: #fff;
+	transition: color 0.3s;
+}
+
+.header-logo {
+	display: inline-flex;
+}
+
+.header-logo img {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 50%;
 }
 
 section{
@@ -33,6 +64,7 @@ section{
   color: #e0ffff;
   background: black;
   }
+
 #projects {
   color: #42455a;
   background: #e0ffff;
@@ -44,6 +76,7 @@ section{
 }
 
 .social-links a {
+	text-decoration: none;
 	display: inline-flex;
 	color: white;
 	opacity: 0.7;
@@ -58,7 +91,6 @@ section{
 	width: 24px;
 	height: 24px;
 }
-
 
 .container {
 	max-width: 1280px;
@@ -172,6 +204,7 @@ footer a {
 	90% { background-image: url("../images/bg-ashbardhan-9.jpg"); color: #f1f1f1; }
 	100% { background-image: url("../images/bg-ashbardhan-10.jpg"); color: #ababab; }
 }
+*/
 
 @media (max-width: 768px) {
 	html {
@@ -183,4 +216,4 @@ footer a {
 	html {
 		font-size: 14px;
 	}
-} */
+}
